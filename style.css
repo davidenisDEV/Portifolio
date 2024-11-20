@@ -1,0 +1,209 @@
+/* Configuração Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #BFBFBF, #8C8C8C, #595959, #404040, #262626);
+    color: #FFFFFF;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Barra Lateral */
+.side-bar {
+    width: 30%;
+    background: linear-gradient(180deg, #404040, #262626);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.side-bar h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #BFBFBF;
+}
+
+.description {
+    text-align: center;
+}
+
+.description h2 {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.nav-bar {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.nav-seccion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nav-seccion img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.nav-seccion a {
+    text-decoration: none;
+    color: #BFBFBF;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-seccion a:hover {
+    color: #FFFFFF;
+}
+
+.rodape {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #8C8C8C;
+}
+
+/* Seção de Projetos */
+.projects {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projects-header h2 {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.check {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #8C8C8C;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.check:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 5px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .check {
+    background-color: #262626;
+}
+
+input:checked + .check:before {
+    transform: translateX(25px);
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #595959;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.project img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.project h4 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background: #404040;
+}
+
+/* Tema Escuro */
+.dark-mode {
+    background: linear-gradient(180deg, #262626, #404040, #595959, #8C8C8C, #BFBFBF);
+}
+
+.dark-mode .side-bar {
+    background: linear-gradient(180deg, #262626, #404040);
+}
+
+.dark-mode .project {
+    background: #404040;
+}

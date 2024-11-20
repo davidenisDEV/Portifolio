@@ -1,73 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio - David Denis</title>
 </head>
 <body>
     <div class="container">
+        <!-- Barra Lateral -->
         <div class="side-bar">
-            <div class="title">
-                <h1>David Denis</h1>
-            </div>
             <div class="perfil">
-                <img src="images/profile.svg" alt="Foto de perfil">
+                <img src="images/foto_perfil" alt="Foto de perfil">
                 <div class="description">
-                    <p>Olá, sou David Denis</p>
-                    <h2>Desenvolvedor Full-Stack</h2>
-                    <p>Especializado em Python e JavaScript.</p>
+                    <h2>Seu Nome</h2>
+                    <p>Desenvolvedor Full-Stack | Automação</p>
                 </div>
             </div>
             <div class="nav-bar">
                 <div class="nav-seccion">
-                    <img src="images/linkedin.svg" alt="LinkedIn"> 
-                    <a href="https://linkedin.com/in/david-denis" target="_blank">LinkedIn</a>
+                    <img src="images/linkedin" alt="LinkedIn">
+                    <a href="https://linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a>
                 </div>
                 <div class="nav-seccion">
-                    <img src="images/github.svg" alt="GitHub"> 
-                    <a href="https://github.com/david-denis" target="_blank">GitHub</a>
-                </div>
-                <div class="nav-seccion">
-                    <img src="images/documents.svg" alt="Currículo"> 
-                    <a href="downloads/Curriculo-David-Denis.pdf" target="_blank">Currículo</a>
+                    <img src="images/github" alt="GitHub">
+                    <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
                 </div>
             </div>
-            <div class="rodape"> ADS 4/5 </div>
+            <div class="rodape">
+                <p>© 2024 | Seu Nome</p>
+            </div>
         </div>
 
+        <!-- Seção de Projetos -->
         <div class="projects">
             <div class="projects-header">
-                <h2>Projetos</h2>
+                <h2>Meus Projetos</h2>
                 <label class="switch">
-                    <input type="checkbox" id="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
                     <span class="check"></span>
                 </label>
             </div>
             <div class="projects-container">
-                <a href="https://github.com/david-denis/todolist">
-                    <div class="project">
-                        <img src="images/todo.svg" alt="To-do List">
-                        <h4>To-Do List</h4>
-                    </div>
-                </a>
-                <a href="https://github.com/david-denis/calculator">
-                    <div class="project">
-                        <img src="images/calculator.svg" alt="Calculadora">
-                        <h4>Calculadora</h4>
-                    </div>
-                </a>
-                <a href="https://github.com/david-denis/portfolio">
-                    <div class="project">
-                        <img src="images/portfolio.svg" alt="Portfólio">
-                        <h4>Portfólio</h4>
-                    </div>
-                </a>
+                <!-- Projeto FletStore -->
+                <div class="project">
+                    <img src="images/FletStore" alt="FletStore">
+                    <h4>FletStore</h4>
+                </div>
+                <!-- Projeto FaunaTech -->
+                <div class="project">
+                    <img src="images/FaunaTech" alt="FaunaTech">
+                    <h4>FaunaTech</h4>
+                </div>
+                <!-- Projeto BuscarCEP -->
+                <div class="project">
+                    <img src="images/BuscarCEP" alt="BuscarCEP">
+                    <h4>BuscarCEP</h4>
+                </div>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        // Script para alternância de tema
+        const toggle = document.getElementById("theme-toggle");
+        toggle.addEventListener("change", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>

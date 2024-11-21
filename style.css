@@ -3,7 +3,7 @@ body {
     font-family: 'Electrolize', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background: linear-gradient(180deg, #BFBFBF, #8C8C8C, #595959, #404040, #262626);
     color: #ddd;
     overflow-x: hidden;
 }
@@ -20,13 +20,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #1a1a1a;
+    background: linear-gradient(90deg, #595959, #404040);
     position: fixed;
-    width: 98%;
+    width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+
 
 
 header .hamburger {
@@ -106,21 +107,33 @@ header .hamburger.active span:nth-child(3) {
 }
 
 .support-btn {
-    background-color: #00fff2;
+    background: linear-gradient(90deg, #8C8C8C, #595959);
     color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
 .support-btn:hover {
-    background-color: #e64a19;
-}
-
-.contact-btn {
-    background-color: #007bff;
+    background: linear-gradient(90deg, #595959, #404040);
     color: #fff;
 }
 
+.contact-btn {
+    background: linear-gradient(90deg, #595959, #404040);
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
 .contact-btn:hover {
-    background-color: #0056b3;
+    background: linear-gradient(90deg, #404040, #262626);
+    color: #fff;
 }
 
 /* Popup */
@@ -291,6 +304,8 @@ header .nav-links li a:hover {
     min-height: 100vh;
     padding: 100px 20px;
     text-align: center;
+    background: linear-gradient(180deg, #BFBFBF, #8C8C8C, #595959);
+    color: #fff;
 }
 
 .home-section h2 {
@@ -338,6 +353,19 @@ header .nav-links li a:hover {
     color: #fff;
     padding: 20px;
     box-sizing: border-box;
+}
+
+#skill, .services-section, .knowme-section {
+    background: linear-gradient(180deg, #595959, #404040, #262626);
+    color: #ddd;
+    padding: 80px 20px;
+}
+
+.slider {
+    background: linear-gradient(180deg, #8C8C8C, #595959);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
 }
 
 #skill h2 {
@@ -422,14 +450,24 @@ header .nav-links li a:hover {
 
 /* Footer Section */
 footer.footer {
-    background-color: #212020;
+    background: linear-gradient(90deg, #404040, #262626);
     color: white;
     text-align: center;
     padding: 20px;
     position: relative;
-    overflow: hidden;
     font-family: Arial, sans-serif;
     font-weight: bold;
+}
+
+.social-media .social-icon {
+    color: #BFBFBF;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media .social-icon:hover {
+    color: #fff;
 }
 
 .social-media {
@@ -438,17 +476,6 @@ footer.footer {
     align-items: center;
     gap: 15px;
     margin-top: 20px;
-}
-
-.social-media .social-icon {
-    color: #fff;
-    font-size: 30px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.social-media .social-icon:hover {
-    color: #ff0000;
 }
 
 /* Glow Effect */

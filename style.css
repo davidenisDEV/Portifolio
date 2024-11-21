@@ -184,6 +184,11 @@ h1, h2, h3, p {
     transition: 0.4s;
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+}
+
 header nav .nav-links {
     display: flex;
     align-items: center;

@@ -15,6 +15,37 @@ h1, h2, h3, p {
     font-size: 20px;
 }
 
+.upi-logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.upi-logos .logo {
+    width: 50px;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
 /* Botões de Suporte e Contato */
 .buttons {
     display: flex;

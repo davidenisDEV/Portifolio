@@ -1,6 +1,6 @@
 
 var typed = new Typed('#wrd', {
-    strings: ['Desenvolvedor Python', 'Full-Stack Developer', 'Analista de Dados', 'Especialista em Automação'],
+    strings: ['Desenvolvedor Python', 'Full-Stack Developer', 'Analista de Dados'],
     typeSpeed: 100,
     loop: true
 });
